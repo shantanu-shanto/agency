@@ -1,0 +1,326 @@
+:root {
+    --primary-color: #1ccaff; /* Bright Blue */
+    --secondary-color: #ECA427; /* Golden Yellow */
+    --accent-color: #FF6B6B; /* Soft Red for accents and call-to-action */
+    --text-color-dark: #333; /* Dark Gray for text */
+    --text-color-light: #f0f0f0; /* Light Gray for text on dark backgrounds */
+    --background-color-light: #f9f9f9; /* Light Background */
+    --background-color-dark: #333; /* Dark Background for sections like footer */
+    --button-hover-color: #ff921c; /* Orange for hover effects */
+    --shadow-color: rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
+}
+
+
+body {
+    background-color: var(--primary-color); /* Optional to apply the color globally */
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+#hero-carousel {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-btn {
+    background-color: #ff921c;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #835959;
+}
+
+.hero-btn-outline {
+    background-color: #ff921c;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn-outline:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/* Hero Carousel Section */
+.animate__animated {
+    animation-duration: 1.5s;
+}
+
+#hero-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+.stat-number {
+    font-size: 2.5rem;
+    color: #ff921c;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-section {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: #ff921c;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 1.1rem;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0;
+    text-align: left;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer p, .footer ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #FF921C; /* Theme color */
+}
+
+/* Additional Styling */
+.container h2 {
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #FF921C; /* Theme color */
+    border-color: #FF921C;
+}
+
+.btn-primary:hover {
+    background-color: #ECA427; /* Slightly lighter */
+    border-color: #ECA427;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Smooth hover effect on buttons */
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* General Section Padding */
+section {
+    padding: 3rem 0;
+}
+
+/* Event Services Overview Section */
+#services {
+    background-color: #f9f9f9;
+}
+
+.service-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    color: #ff921c;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Featured Projects Section */
+.project-card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #ff921c;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Client Testimonials Section */
+#testimonials .card {
+    border: none;
+    border-radius: 10px;
+}
+
+.star-rating {
+    color: #ff921c;
+    font-size: 1.2rem;
+}
+
+/* Call-to-Action Section */
+#cta {
+    background-image: url('images/cta-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#cta .btn {
+    color: #ff921c;
+    font-weight: bold;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+
+    #hero-carousel .carousel-container {
+        padding: 0 20px;
+    }
+}
+
