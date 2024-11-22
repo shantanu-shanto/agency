@@ -195,7 +195,12 @@ p {
     text-transform: uppercase;
     font-weight: bold;
 }
-
+.card-img-top {
+    cursor: pointer;
+}
+.card-img-bottom {
+    cursor: pointer;
+}
 .btn-primary {
     background-color: #FF921C; /* Theme color */
     border-color: #FF921C;
